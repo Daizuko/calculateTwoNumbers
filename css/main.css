@@ -1,0 +1,198 @@
+/**
+ * calculateTwoNumbers() stylesheet
+ *
+ * @author Jonas Nilsson
+ * www.jnsnlssn.se
+ */
+
+/**********************************************************************************************/
+/*                                          Formatting                                        */
+/**********************************************************************************************/
+html, body, ul, li, div, p, h1, h2, h3 {
+  margin: 0px; padding: 0px;
+}
+
+body {
+  background: url('../images/bg1.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  color: #000;
+  font-size: 12px;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+h1 {
+  font-size: 36px;
+  text-shadow: 0 2px 1px #fff, 0 3px 1px #111;
+}
+
+h2 {
+  font-size: 20px;  
+  text-shadow: 0 2px 1px #fff;
+  text-align: center;
+}
+
+h3 { font-size: 16px; }
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+  a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  a:visited {}
+
+fieldset {
+  border: 1px solid #666;
+  text-align: center;
+}
+
+legend { text-align: left; }
+
+input {
+  border: 1px solid #999;
+  background-color: #1a82f7;
+  background: -webkit-linear-gradient(#fff, #ccc); /* Safari 5.1+, Chrome 10+ */
+     background: -moz-linear-gradient(100% 100% 90deg, #ccc, #fff); /* Firefox 3.6+ */
+       background: -o-linear-gradient(#ccc, #fff); /* Opera 11.10+ */  
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc)); /* Safari 4-5, Chrome 1-9 */
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px #888;
+     -moz-box-shadow: 0 0 2px #888;
+          box-shadow: 0 0 2px #888;
+  outline: none;
+}
+  input:hover { border: 1px solid #555 }
+  input:active {
+    background-color: #1a82f7;
+    border: 1px solid #dadada;
+  }
+
+.clear { clear: both; }
+
+/**********************************************************************************************/
+/* Sections                                          */
+/**********************************************************************************************/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-box-shadow: 0 3px 10px #333;
+     -moz-box-shadow: 0 3px 10px #333;
+          box-shadow: 0 3px 10px #333;
+}
+
+  #logo {
+    margin: 0 auto;
+    padding-top: 15px;
+    position: relative;
+    color: #333;
+    text-align: center;
+  }
+  
+  #background-changer {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    text-align: center;
+  }
+    #background-changer span {
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #000;
+    }
+    #background-changer img {
+      border: 1px solid #777;
+      cursor: pointer;
+    }
+      #background-changer img:hover {
+        border: 1px solid #000;
+      }
+    
+#container {
+  margin: 0 auto;
+  width: 300px;
+  height: 100%;
+  background: none;
+  overflow: auto;
+  font-size: 1.4em;
+}
+
+  #content {
+    margin: 60% 15px 15px 15px;
+    padding: 15px 30px;
+    position: relative;
+    background: #eee;
+    line-height: 1.5;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: 0 0 5px #000;
+       -moz-box-shadow: 0 0 5px #000;
+            box-shadow: 0 0 5px #000;
+    overflow: hidden;
+  }
+  
+    #number_container, #operator_container, #result_container {
+      margin-top: 20px;
+    }
+  
+    #number1, #number2 {
+      margin: 0 5px;
+      width: 70px;
+      height: 16px;
+    }
+
+    .number {
+      text-align: center;
+    }
+      .number:hover {}
+      .number:active {}
+    
+    #digit_limit {
+      font-size: 10px;
+    }
+  
+    .operator {
+      margin: 0 5px;
+      width: 30px;
+      height: 25px;
+      font-weight: bold;
+    }
+      .operator:hover {
+        font-weight: bold;
+      }
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 -3px 10px #333;
+     -moz-box-shadow: 0 -3px 10px #333;
+          box-shadow: 0 -3px 10px #333;
+}
+  
+  #footer span {
+    position: relative;
+  }

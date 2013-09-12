@@ -1,0 +1,23 @@
++-----------------------------------------+
+| Version history - calculateTwoNumbers() |
+| Author: Jonas Nilsson                   |
+| www.jnsnlssn.se                         |
++-----------------------------------------+
+0.5:
+- Updated code for github deployment
+- Switched backgrounds and added credit to the creator
+
+0.4:
+- jQuery input focus implemented
+- jQuery UI highlighting implemented
+- changed favicon to a .png instead of a .ico
+
+0.3:
+- Favicon added
+
+0.2:
+- First version of calculator support implemented
+
+0.1:
+- No calculator support yet
+- Background changer javascript completed
