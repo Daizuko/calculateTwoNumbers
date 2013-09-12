@@ -1,8 +1,4 @@
-+--------------------------------+
-| README - calculateTwoNumbers() |
-| Author: Jonas Nilsson          |
-| www.jnsnlssn.se                |
-+--------------------------------+
+| README - calculateTwoNumbers() | Author: Jonas Nilsson | www.jnsnlssn.se |
 
 A simple calculation app with background switcher.
 
